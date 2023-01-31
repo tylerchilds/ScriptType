@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title> Sample Script by  Tyler Childs</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+      * {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+@media print {
+  html, body {
+    height: 100%;
+  }
+}
+
+body {
+  font-size: 12pt;
+  font-family: courier;
+  margin: 0 auto;
+  max-width: 6in;
+}
+
+@page {
+  size: 8.5in 11in;
+  margin: 1in 1in 1in 1.5in;
+}
+
+ScriptType-metapage {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+metapage-cover {
+  display: grid;
+  grid-template-areas:
+    "main main"
+    "contact agent";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr auto;
+  width: 100%;
+  height: 100%;
+}
+
+metapage-main {
+  place-self: center;
+  grid-area: main;
+  text-align: center;
+}
+
+metapage-title {
+  margin-bottom: 1rem;
+}
+
+metapage-title,
+metapage-author {
+  display: block;
+}
+
+metapage-contact {
+  grid-area: contact;
+}
+
+metapage-agent {
+  grid-area: agent;
+}
+
+ScriptType-place,
+ScriptType-actor,
+ScriptType-message,
+ScriptType-subtext,
+ScriptType-context,
+ScriptType-composition,
+ScriptType-freetext,
+ScriptType-blank {
+  display: block;
+}
+
+ScriptType-place,
+ScriptType-context {
+  text-transform: uppercase;
+  margin: 1rem 0;
+}
+
+ScriptType-actor,
+ScriptType-subtext {
+  text-align: center;
+}
+
+ScriptType-actor {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 1rem 0 0;
+}
+
+ScriptType-composition {
+  margin: 1rem 0;
+  text-align: right;
+}
+
+ScriptType-message {
+  margin: 0 1in;
+}
+
+ScriptType-subtext::before {
+  content: '(';
+}
+
+ScriptType-subtext::after {
+  content: ')';
+}
+
+ScriptType-freetext {
+  margin: 1rem 0;
+}
+
+    </style>
+  </head>
+  <body>
+  
+    <ScriptType-metapage>
+      
+    <metapage-cover>
+      <metapage-main>
+        <metapage-title>
+           Sample Script
+        </metapage-title>
+        by
+        <metapage-author>
+           Tyler Childs
+        </metapage-author>
+      </metapage-main>
+      <metapage-contact>
+         yo@tychi.me
+      </metapage-contact>
+      <metapage-agent>
+         team@sillyz.computer
+      </metapage-agent>
+    </metapage-cover>
+  
+    </ScriptType-metapage>
+  
+    <ScriptType-composition>
+      FADE IN:
+    </ScriptType-composition>
+  
+    <ScriptType-place>
+      INT: ROOM
+    </ScriptType-place>
+  
+    <ScriptType-context>
+      The room itself feels naturally artificial. As if it takes place inside of a piece of paper.
+    </ScriptType-context>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-freetext>
+      TYLER stands behind a podium with a projector displaying "Hello." in a swanky font. On his right breast is a post it note that reads "Ty"
+    </ScriptType-freetext>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      TYLER
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      Hey. Welcome.
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-freetext>
+      Tyler walks off camera and returns momentarily with a plastic guitar with circuit boards taped on and loose cables hanging out.
+    </ScriptType-freetext>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      TYLER
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      I know you're thinking this is the computer.
+    </ScriptType-message>
+  
+    <ScriptType-subtext>
+      smirking
+    </ScriptType-subtext>
+  
+    <ScriptType-message>
+      This is the computer.
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-freetext>
+      Tyler points at the post it note on his chest.
+    </ScriptType-freetext>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-freetext>
+      CLOSE UP:
+    </ScriptType-freetext>
+  
+    <ScriptType-freetext>
+      Tyler's finger is pointing directly at the QR code in the top right corner of the post it. Preceding the QR code is the text "sillyz.computer"
+    </ScriptType-freetext>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-freetext>
+      The swanky "Hello." that was on the wall begins to fade in on the post-it note.
+    </ScriptType-freetext>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-composition>
+      CUT TO:
+    </ScriptType-composition>
+  

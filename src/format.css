@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+@media print {
+  html, body {
+    height: 100%;
+  }
+}
+
+body {
+  font-size: 12pt;
+  font-family: courier;
+  margin: 0 auto;
+  max-width: 6in;
+}
+
+@page {
+  size: 8.5in 11in;
+  margin: 1in 1in 1in 1.5in;
+}
+
+ScriptType-metapage {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+metapage-cover {
+  display: grid;
+  grid-template-areas:
+    "main main"
+    "contact agent";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr auto;
+  width: 100%;
+  height: 100%;
+}
+
+metapage-main {
+  place-self: center;
+  grid-area: main;
+  text-align: center;
+}
+
+metapage-title {
+  margin-bottom: 1rem;
+}
+
+metapage-title,
+metapage-author {
+  display: block;
+}
+
+metapage-contact {
+  grid-area: contact;
+}
+
+metapage-agent {
+  grid-area: agent;
+}
+
+ScriptType-place,
+ScriptType-actor,
+ScriptType-message,
+ScriptType-subtext,
+ScriptType-context,
+ScriptType-composition,
+ScriptType-freetext,
+ScriptType-blank {
+  display: block;
+}
+
+ScriptType-place,
+ScriptType-context {
+  text-transform: uppercase;
+  margin: 1rem 0;
+}
+
+ScriptType-actor,
+ScriptType-subtext {
+  text-align: center;
+}
+
+ScriptType-actor {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 1rem 0 0;
+}
+
+ScriptType-composition {
+  margin: 1rem 0;
+  text-align: right;
+}
+
+ScriptType-message {
+  margin: 0 1in;
+}
+
+ScriptType-subtext::before {
+  content: '(';
+}
+
+ScriptType-subtext::after {
+  content: ')';
+}
+
+ScriptType-freetext {
+  margin: 1rem 0;
+}
