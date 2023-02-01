@@ -106,6 +106,7 @@ async function headers() {
     <style>
       ${style}
     </style>
+    <script src="https://unpkg.com/pagedjs/dist/paged.polyfill.js" defer></script>
   </head>
   <body>
   `
