@@ -2,15 +2,17 @@ import { readLines } from "https://deno.land/std@0.175.0/io/read_lines.ts";
 import * as path from "https://deno.land/std@0.175.0/path/mod.ts";
 
 let scope = 'global'
+let dynamic = ''
 
 const ScriptType = {
-  '{': meta,
+  '{': metaCode,
   '#': place,
   '@': actor,
   '-': message,
   '(': subtext,
   '!': context,
   '^': composition,
+  '<': dynamicCode,
 }
 
 const input = Deno.args[0];
@@ -23,10 +25,12 @@ await Deno.create(result);
 
 const NORMAL_MODE = 'normal'
 const META_MODE = 'meta'
+const DYNAMIC_MODE = 'dynamic'
 
 const modes = {
-  [NORMAL_MODE]: human,
-  [META_MODE]: computer
+  [NORMAL_MODE]: normalMode,
+  [META_MODE]: metaMode,
+  [DYNAMIC_MODE]: dynamicMode,
 }
 
 let mode = NORMAL_MODE
@@ -44,7 +48,7 @@ for await (const line of readLines(fileReader)) {
   await (modes[mode] || noop)(line)
 }
 
-async function human(line) {
+async function normalMode(line) {
   if(!line) return await blank()
 
   const symbol = line[0]
@@ -57,7 +61,7 @@ async function human(line) {
   return await freetext(line)
 }
 
-async function computer(line) {
+async function metaMode(line) {
   const [key, value] = line.split(':')
 
   if(!value) {
@@ -66,12 +70,20 @@ async function computer(line) {
     return setMode(NORMAL_MODE)
   }
 
-  if(!bus.state[scope]) {
-    bus.state[scope] = {}
+  bus.state[scope][key.trim()] = value.trim()
+}
+
+async function dynamicMode(line) {
+  const [key, value] = line.split(':')
+
+  if(!value) {
+    await module()
+    return setMode(NORMAL_MODE)
   }
 
-  bus.state[scope][key] = value
+  bus.state[dynamic][key.trim()] = value.trim()
 }
+
 
 function setMode(m) {
   mode = m
@@ -81,9 +93,25 @@ function setScope(s) {
   scope = s
 }
 
-function meta(scope) {
-  setMode(META_MODE)
+function setDynamic(d) {
+  dynamic = d
+}
+
+
+function metaCode(scope) {
   setScope(scope)
+  resetAttributes(scope)
+  setMode(META_MODE)
+}
+
+function dynamicCode(x) {
+  setDynamic(x)
+  resetAttributes(x)
+  setMode(DYNAMIC_MODE)
+}
+
+function resetAttributes(x) {
+  bus.state[x] = {}
 }
 
 async function headers() {
@@ -142,6 +170,15 @@ async function metapage() {
     </metapage-cover>
   `)
 }
+async function module() {
+  const properties = bus.state[dynamic]
+
+  const attributes = Object.keys(properties)
+    .map(x => `${x}="${properties[x]}"`).join('')
+
+  const html = `<${dynamic} ${attributes}></${dynamic}>`
+  await Deno.writeTextFile(result, html, { append: true})
+}
 
 function markup(string) {
   return string.replaceAll('\\', '<br>')
@@ -165,7 +202,6 @@ async function context(line) {
 async function composition(line) {
   await append('composition', line)
 }
-
 async function freetext(line) {
   await append('freetext', line)
 }
