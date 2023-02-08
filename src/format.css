@@ -111,6 +111,12 @@ ScriptType-message {
   margin: 0 1in;
 }
 
+ScriptType-message:first-child::before {
+  content: "(CONT'D)" !important;
+  display: block;
+  text-align: center;
+}
+
 ScriptType-subtext::before {
   content: '(';
 }

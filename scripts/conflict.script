@@ -4,7 +4,7 @@ author: Tyler Childs
 contact: yo@tychi.me
 agent: team@sillyz.computer
 
-# INT. Convention Booth
+# INT. Convention Booth - DAY
 
 Two people sit at a table, one holds stacks of notebooks, the other a bundle of pens. A radio plays from a clock in the corner.
 
@@ -14,9 +14,12 @@ Two people sit at a table, one holds stacks of notebooks, the other a bundle of 
 @ Pen
 - Well that expains why no one is here.
 
-MONTAGE
+MONTAGE:
 
 A fairly sparse convention center filled with empty booths of eccentric purveyours of harmless amusements.
+
+.
+# INT. Convention Booth - DAY
 
 @ Paper
 - Well, if you could give me a little more grit to work with
@@ -36,6 +39,8 @@ Pen interrupts
 - I think you can be, but you're just not right now.
 
 Pen shuts down vocally and a few hours go by.
+
+# INT. Convention Booth - DAY
 
 Someone carrying a box of whoopie cushions approaches
 
@@ -80,6 +85,8 @@ Someone carrying a box of whoopie cushions approaches
 
 Whoopie leaves, more hours pass, with Pen and Paper now packing up.
 
+# EXT. Convention Booth - Night
+
 @ Pen
 - I am sorry we didn't hit any quotas today.
 
@@ -103,6 +110,7 @@ Whoopie leaves, more hours pass, with Pen and Paper now packing up.
 
 @ Paper
 - The shape of joy?
+.
 
 @ Pen
 - A clown listens, then shows a cheer up, often from a nothing.
@@ -124,7 +132,7 @@ Paper, speechless.
 @ Pen
 - You look around. Did people change or did you try and bend reality so hard it spiraled out of control?
 ( tired
-- You hid behind my name. How many other Pens have you played the same
+- You hid behind my name. How many other Pens have you played the same?
 
 @ Paper
 - You all would be nowhere without me!
