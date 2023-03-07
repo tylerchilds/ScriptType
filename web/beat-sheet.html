@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Beat Sheet by Tyler Childs</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+      * {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+@media print {
+  html, body {
+    height: 100%;
+  }
+}
+
+body {
+  font-size: 12pt;
+  font-family: courier;
+  margin: 0 auto;
+  max-width: 6in;
+}
+
+@page {
+  size: 8.5in 11in;
+  margin: 1in 1in 1in 1.5in;
+}
+
+@page {
+  @top-right {
+    content: counter(page) '.';
+  }
+}
+
+@page:first {
+  @top-right {
+    content: '';
+  }
+}
+
+ScriptType-metapage {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+metapage-cover {
+  display: grid;
+  grid-template-areas:
+    "main main"
+    "contact agent";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr auto;
+  width: 100%;
+  height: 100%;
+}
+
+metapage-main {
+  place-self: center;
+  grid-area: main;
+  text-align: center;
+}
+
+metapage-title {
+  margin-bottom: 1rem;
+}
+
+metapage-title,
+metapage-author {
+  display: block;
+}
+
+metapage-contact {
+  grid-area: contact;
+}
+
+metapage-agent {
+  grid-area: agent;
+}
+
+ScriptType-place,
+ScriptType-actor,
+ScriptType-message,
+ScriptType-subtext,
+ScriptType-context,
+ScriptType-composition,
+ScriptType-freetext,
+ScriptType-blank {
+  display: block;
+}
+
+ScriptType-place,
+ScriptType-context {
+  text-transform: uppercase;
+  margin: 1rem 0;
+}
+
+ScriptType-actor,
+ScriptType-subtext {
+  text-align: center;
+}
+
+ScriptType-actor {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 1rem 0 0;
+}
+
+ScriptType-composition {
+  margin: 1rem 0;
+  text-align: right;
+}
+
+ScriptType-message {
+  margin: 0 1in;
+}
+
+ScriptType-message:first-child::before {
+  content: "(CONT'D)" !important;
+  display: block;
+  text-align: center;
+}
+
+ScriptType-subtext::before {
+  content: '(';
+}
+
+ScriptType-subtext::after {
+  content: ')';
+}
+
+ScriptType-freetext {
+  margin: 1rem 0;
+}
+
+    </style>
+    <script src="https://unpkg.com/pagedjs/dist/paged.polyfill.js" defer></script>
+  </head>
+  <body>
+  
+    <ScriptType-metapage>
+      
+    <metapage-cover>
+      <metapage-main>
+        <metapage-title>
+          Beat Sheet
+        </metapage-title>
+        by
+        <metapage-author>
+          Tyler Childs
+        </metapage-author>
+      </metapage-main>
+      <metapage-contact>
+        yo@tychi.me
+      </metapage-contact>
+      <metapage-agent>
+        team@sillyz.computer
+      </metapage-agent>
+    </metapage-cover>
+  
+    </ScriptType-metapage>
+  
+    <ScriptType-place>
+      Beat 1 - Opening Image
+    </ScriptType-place>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-freetext>
+      The universe brims with possiblity; uncountable stars blink on and off, galaxies spin, but slow down. The camera flows into the Milky Way that continues to grind to a halt and reaches earth as it stops spinning. There is little land; only mountaintops peak above the oceans-- except for one floating redwood forest with an enclosed labrinth permeating the canopy.
+    </ScriptType-freetext>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-place>
+      Beat 2 - Theme Stated
+    </ScriptType-place>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-freetext>
+      Aalfred Spry is not laughing as he stares upwards into the Convergence Dome that swirls with color like an Aurora Borealis. From the tome in his left hands, he summons a cyclone of papers-- his personal assistant, Genesis, that runs a diagnostic check and informs him of a multiversal War on Clowns.
+    </ScriptType-freetext>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-place>
+      Beat 3 - Set Up
+    </ScriptType-place>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-freetext>
+      We meet Aalfred's soulmate, Sage, that mentions she'd like to attend the next Underwater Interdimensional Night Market. Aalfred is pre-occupied with getting to the bottom of the war. We continue with his day meeting with leaders across space and time, where he is a figurehead and Genesis performs all functions in the partnership, besides being a friendly face of confidence.
+    </ScriptType-freetext>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-place>
+      Beat 4 - Catalyst
+    </ScriptType-place>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-freetext>
+      After a boring day, if a day in The Now can even be measured, Aalfred finds himself staring up into the convergence dome wondering who he has become. In his right hand, he holds a pencil and from his right wrist, post-it notes sling quickly by as he scratches the pencil across them as they swirl just inside the dome forming a portal to a black hole, which snatches the suit right off his body before closing and leaving him nude.
+    </ScriptType-freetext>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-freetext>
+      Immediately, Genesis, Sage, and a Special Agent, Fey, enter the room. Aalfred forgot about Suit Law. You'll always need a suit when you do not have one.
+    </ScriptType-freetext>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-place>
+      Beat 5 - Debate
+    </ScriptType-place>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-freetext>
+      Sage informs Aalfred that, Blake, the closest person he has to a friend is getting married right now; he's the best man and will need a new suit. The Underwater Interdimensional Night Market is happening on the sea floor of The Now, Genesis wants to go. Fey has discovered a person of fixed interest in the War on Clowns.
+    </ScriptType-freetext>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-freetext>
+      Aalfred chooses the wedding, with plans to visit the night market after-- Sage is cool with this as long as late is not never. Fey is promoted to Field Agent to follow up on the person of interest alone.
+    </ScriptType-freetext>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-place>
+      Beat 6 - Break Into 2
+    </ScriptType-place>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-freetext>
+      Recognizing Alfred has become a bit bland with the complacency of being outside of time, he decides to get right with the universe before going to the wedding. Sage suggests he find a way to do that and put a dent into the War on Clowns.
+    </ScriptType-freetext>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-place>
+      Beat 7 - B Story
+    </ScriptType-place>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-freetext>
+      Fey visits a coffee shop in the year 2009 and asks to share a table with Jane Fonda-- the fixed person of interest. Jane is more valuable to the establishment alive than dead and has an amount of diplomatic immunity. While she will not consider venturing outside her own timeline, she will help Fey in the investigation to get to the bottom of The War on Clowns.
+    </ScriptType-freetext>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-place>
+      Beat 8 - Fun & Games
+    </ScriptType-place>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-freetext>
+      Gaining insight from Genesis, a consistent trend against clowns seems to be a lack of supportive in the court of public opinion. Boston being a consistent battleground in wars across time, the war on clowns is no different. The year is 1997 and baseball as a sport has been forgotten. A New York Hedge fund named The Yankees plans to buy up all the now confusing diamond pitches that appeared around the country to turn them into office buildings, starting with Fenway Park! To save Boston, Baseball, and set clowns back on a safe path from extinction, he must train the best major league baseball team mascots to challenge The Yankees.
+    </ScriptType-freetext>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-place>
+      Beat 9 - Midpoint
+    </ScriptType-place>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-freetext>
+      Jane and Fey discover the War on Clowns began in 1972 as part of a misinformation campaign against Jane. Her critically acclaimed and war ending film F.T.A. has been erased in this time stream. The establishment has this event heavily fortified. All war hinges on this one film not existing-- it is an instruction manual for clowns negotiating peace across cultures.
+    </ScriptType-freetext>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-freetext>
+      Blake and Aalfred go shopping for an appropriate best man suit. None of them feel right, Blake overplays his hand by "accidentally" giving Aalfred a paper cut, which is when realizes he's been set up. Blake is not really his friend and is working for Genesis. Double betrayal.
+    </ScriptType-freetext>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-place>
+      Beat 10 - Bad Guys Close In
+    </ScriptType-place>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-freetext>
+      Using the paper sample with Aalfred's blood, Genesis creates an alternate reality where everyone is Alfred-- the same type of reality where Fey is from. Training the Aalfred's from this obscure universe, Genesis uses this new influence over leaders of space and time to create wars where there once was peace.
+    </ScriptType-freetext>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-freetext>
+      In an animated musical piece, cats and dogs play the roles of warring gods and godesses, they make war across space and time referencing events known and unknown. Aalfred as a rodeo clown guides the narrative while he struggles to make a peace between the two factions, escaping between scenes in a barrel instead of his traditional papers.
+    </ScriptType-freetext>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-place>
+      Beat 11 - All is Lost
+    </ScriptType-place>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-freetext>
+      Aalfred catches up with Sage at the Underwater Interdimensional Night Market. He tells her of his plan to escape with her, they'll be on the run, but they'll be together. She's hesitant to run away with him; he's frustrated she's more interested in the night market than the urgency of the situation. He snaps; she breaks. He forgot she's an anamoly. She cannot leave The Now. She's never existed in a time stream and would slip through subspace and be trapped in a dimension of non dimension. These are the last moments they'll ever have together.
+    </ScriptType-freetext>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-freetext>
+      As the war on clown ripples across dimensions, the market gets more and more agitated.
+    </ScriptType-freetext>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-place>
+      Beat 12 - Dark Night of the Soul
+    </ScriptType-place>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-freetext>
+      Aalfred is in mourning knowing Sage will die if he shuts down The Now. She wants to enjoy what she can while she can, but he cannot put on the same brave face he always has-- not now.
+    </ScriptType-freetext>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-freetext>
+      Sage finds comfort in the clowns at the market. They speak praises of the hero Aalfred has become, a contrast to the bland man ruled by Genesis.
+    </ScriptType-freetext>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-place>
+      Beat 13 - Break Into 3
+    </ScriptType-place>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-freetext>
+      Jane and Fey uncover Genesis' plan to incarnate-- the reason for the wars. He's harvesting resources to become human and replace Aalfred as leader of The Now.
+    </ScriptType-freetext>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-freetext>
+      Aalfred now needs to showdown with Genesis one on one, to replicate his discovery of incarnation to save Sage, so they can finally leave The Now behind forever.
+    </ScriptType-freetext>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-place>
+      Beat 14 - Finale
+    </ScriptType-place>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-freetext>
+      While The Now began as accidental quest in innovation, it became the only habitable environment for Sage once she appeared. With Aalfred back in alignment with the universe, he knows there's only one thing to do: free everyone stuck in an unending time war he caused by treating time as a battery for The Now and escape with Sage.
+    </ScriptType-freetext>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-freetext>
+      He's lost battle after battle across space and time against Genesis, but he's himself now. He can be honest. He reasons with Genesis and negotiates a peace. He'll leave willingly, if Genesis incarnates Sage-- all he has left and all he ever had. With Aalfred prime out of the picture, Genesis can remain unchecked with his army of Aalfreds.
+    </ScriptType-freetext>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-freetext>
+      Aalfred and Sage quickly escape to the beginning of his timeline.
+    </ScriptType-freetext>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-place>
+      Beat 15 - Final Image
+    </ScriptType-place>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-freetext>
+      In the clearing of a meadow surrounded by tall redwoods, Aalfred and Sage sit around a camp fire laughing together. Aalfred plucks the first page from his tome, a paper titled, "Recipe for paper". He places the paper in the fire and after it burns, he throws on the whole tome as the camera pans out of the clearing, with a mountain in the backdrop before reaching space, seeing earth, the galaxy, and the universe spinning again.
+    </ScriptType-freetext>
+  
