@@ -8,7 +8,7 @@ const ScriptType = {
   '{': metaCode,
   '#': place,
   '@': actor,
-  '-': message,
+  '"': message,
   '(': subtext,
   '!': context,
   '^': composition,

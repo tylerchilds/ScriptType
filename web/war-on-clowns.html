@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>War On Clowns by Tyler Childs</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+      * {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+@media print {
+  html, body {
+    height: 100%;
+  }
+}
+
+body {
+  font-size: 12pt;
+  font-family: courier;
+  margin: 0 auto;
+  max-width: 6in;
+}
+
+@page {
+  size: 8.5in 11in;
+  margin: 1in 1in 1in 1.5in;
+}
+
+@page {
+  @top-right {
+    content: counter(page) '.';
+  }
+}
+
+@page:first {
+  @top-right {
+    content: '';
+  }
+}
+
+ScriptType-metapage {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+metapage-cover {
+  display: grid;
+  grid-template-areas:
+    "main main"
+    "contact agent";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr auto;
+  width: 100%;
+  height: 100%;
+}
+
+metapage-main {
+  place-self: center;
+  grid-area: main;
+  text-align: center;
+}
+
+metapage-title {
+  margin-bottom: 1rem;
+}
+
+metapage-title,
+metapage-author {
+  display: block;
+}
+
+metapage-contact {
+  grid-area: contact;
+}
+
+metapage-agent {
+  grid-area: agent;
+}
+
+ScriptType-place,
+ScriptType-actor,
+ScriptType-message,
+ScriptType-subtext,
+ScriptType-context,
+ScriptType-composition,
+ScriptType-freetext,
+ScriptType-blank {
+  display: block;
+}
+
+ScriptType-place,
+ScriptType-context {
+  text-transform: uppercase;
+  margin: 1rem 0;
+}
+
+ScriptType-actor,
+ScriptType-subtext {
+  text-align: center;
+}
+
+ScriptType-actor {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 1rem 0 0;
+}
+
+ScriptType-composition {
+  margin: 1rem 0;
+  text-align: right;
+}
+
+ScriptType-message {
+  margin: 0 1in;
+}
+
+ScriptType-message:first-child::before {
+  content: "(CONT'D)" !important;
+  display: block;
+  text-align: center;
+}
+
+ScriptType-subtext::before {
+  content: '(';
+}
+
+ScriptType-subtext::after {
+  content: ')';
+}
+
+ScriptType-freetext {
+  margin: 1rem 0;
+}
+
+    </style>
+    <script src="https://unpkg.com/pagedjs/dist/paged.polyfill.js" defer></script>
+  </head>
+  <body>
+  
+    <ScriptType-metapage>
+      
+    <metapage-cover>
+      <metapage-main>
+        <metapage-title>
+          War On Clowns
+        </metapage-title>
+        by
+        <metapage-author>
+          Tyler Childs
+        </metapage-author>
+      </metapage-main>
+      <metapage-contact>
+        yo@tychi.me
+      </metapage-contact>
+      <metapage-agent>
+        team@sillyz.computer
+      </metapage-agent>
+    </metapage-cover>
+  
+    </ScriptType-metapage>
+  
+    <ScriptType-place>
+      Ext. Space
+    </ScriptType-place>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-freetext>
+      The universe brims with possiblity; uncountable stars blink on and off, galaxies spin, but slow down. The camera flows into a Milky Way that continues to grind to a halt and reaches earth as it stops spinning.
+    </ScriptType-freetext>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-place>
+      Ext. Earth
+    </ScriptType-place>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-freetext>
+      The planet is covered in water; only mountaintops peak above the oceans except for one floating redwood forest. In the canopy of the forest, a tree-house meets space-station connects across trunks, providing stability for the floating trees supported with roots bouyed in a thick kelp forest.
+    </ScriptType-freetext>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-place>
+      Convergence Dome
+    </ScriptType-place>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-freetext>
+      The camera focuses on the ceiling of the room, a dome with a brush of cool colors, blues, greens, like an aurora borealis, an electro-magnetic storm. Pockets of red begin flashing.
+    </ScriptType-freetext>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-freetext>
+      PAN DOWN; backwards, then half corkscrew
+    </ScriptType-freetext>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-freetext>
+      The room is large and circular, with pillars around the perimeter, and no clear doors in or out.
+    </ScriptType-freetext>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-freetext>
+      AALFRED, a young looking man that's thousands of years old, is staring upwards towards the colorful, cloudy display above him, confused. He wears a long cloak flowing so the cloth of the tail sprawls across the ground behind him for about a foot. In his left hand, he holds a TOME. In his right, a PENCIL.
+    </ScriptType-freetext>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Aalfred
+    </ScriptType-actor>
+  
+    <ScriptType-subtext>
+      under breath
+    </ScriptType-subtext>
+  
+    <ScriptType-message>
+      What is going on?
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-freetext>
+      Aalfred squints
+    </ScriptType-freetext>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-freetext>
+      ZOOM IN and UP
+    </ScriptType-freetext>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-freetext>
+      A small cluster of red blips occur with a predictable rhythm.
+    </ScriptType-freetext>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-freetext>
+      FLIP DOWN, looking directly at Aalfred from above
+    </ScriptType-freetext>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Aalfred
+    </ScriptType-actor>
+  
+    <ScriptType-subtext>
+      to himself
+    </ScriptType-subtext>
+  
+    <ScriptType-message>
+      That'll be the hotspot, but what are we getting ourselves into this time?
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-freetext>
+      Aalfred places the pencil behind his ear and turns the TOME to the second page and out shoots 84 scraps of paper of unique colors that swirl around Aalfred, billowing his cloak, before settling in a fairly orderly pattern, sorted by hues and lightness, into a perfect circle, almost like a tunnel, or a portal into another dimension.
+    </ScriptType-freetext>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Aalfred
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      Let's run a diagnostic check
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-freetext>
+      The papers alternate blinking, like a rack of servers calculating collectively. After a few seconds, the blinking stops. 
+    </ScriptType-freetext>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Genesis
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      The clowns are falling.
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-freetext>
+      The papers spoke in a musical monotone, each paper reflects a unique note, blinking and inflecting as the voice of GENESIS, the quantum computer that Aalfred built to assist him, requires.
+    </ScriptType-freetext>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Aalfred
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      Why the clowns? What do you mean the clowns are falling.
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Genesis
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      It appears a war on clowns is underway.
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Aalfred
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      Why clowns?
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Genesis
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      That'll require further diagnostics.
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Aalfred
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      By all means, further diagnose then.
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-freetext>
+      Genesis blinks. Different, longer this time and more sporadic.
+    </ScriptType-freetext>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Genesis
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      It appears clowns are a hinge.
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Aalfred
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      A hinge?
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Genesis
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      Clowns brings a precarious balance to the multiverse. It appears with fewer clowns, there are more wars. Direct correlation.
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Aalfred
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      You're saying this is just beginning?
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Genesis
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      Yes. This is not an anamoly. It appears the War on Clowns is a calculated interference with the narrative.
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Aalfred
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      Let's get to work then.
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-freetext>
+      Genesis swirls into a cyclone surrounding Aalfred.
+    </ScriptType-freetext>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Genesis
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      A new game begins!
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-freetext>
+      Genesis disperses into 84 different directions, behind 42 different pillars, half entering from the left, half entering from the right, but none spotted after passing the event horizon beyond the pillars.
+    </ScriptType-freetext>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-freetext>
+      Behind one of the pillars enters SAGE, a young woman mirroring Aalfred in height and composition.
+    </ScriptType-freetext>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Sage
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      You look like you've got work to do?
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Aalfred
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      Something's coming up.
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Sage
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      I'd like to go to the next Underwater Interdimensional Night Market that comes up.
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Aalfred
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      I cannot predict my work or when interdimensional festivals occur.
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Sage
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      I know, I'm just saying, I want to go to the next one.
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Aalfred
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      I know, and I'm just saying, I cannot make promises. The narrative itself is threatened.
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Sage
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      The narrative is always threatened, that's why we have you. Just think about it.
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Aalfred
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      If we can go, we'll go. I have to get to work. I can sense people are beginning to question these anamolies.
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Sage
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      That's all I hoped to squeeze out of you, we'll have fun!
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Aalfred
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      We never don't have fun.
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-freetext>
+      Sage smiles at Aalfred and he smiles back, they walk together towards one pillar while holding hands. As they approach the pillar, they kiss, and separate with Sage going left around the pillar and Aalfred going right.
+    </ScriptType-freetext>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-freetext>
+      The camera follows Aalfred as he walks behind the pillar, revealing a long circular corridor around the perimeter of the room and no clear doors in or out, but Sage is gone. As Aalfred rounds the pillar in the direction Sage was, he cannot see the center room-- just the pillars forming a hall between the wall.
+    </ScriptType-freetext>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-freetext>
+      Emerging from behind the pillar, Aalfred is no longer in the convergence dome.
+    </ScriptType-freetext>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-place>
+      Int. Office
+    </ScriptType-place>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-freetext>
+      Aalfred's office is fairly narrow, vaulted ceilings, with one column at the end he's standing at and a giant window at the other that has the same swirling aurora borealis monitoring system. In the center of the room are two couches with a coffee table in the center.
+    </ScriptType-freetext>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-freetext>
+      To the right of the sitting area is a double wide arched doorway, where Genesis in circular formation rests awaiting Aalfred.
+    </ScriptType-freetext>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-freetext>
+      To the left, is a drafting table. The room is sparse, but decorated with curtains and carpets. It feels spacious, but not empty.
+    </ScriptType-freetext>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-freetext>
+      Aalfred approaches the center of the room and sits down before glancing over to Genesis.
+    </ScriptType-freetext>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Aalfred
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      Okay
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-freetext>
+      Genesis blinks, the window switches from the aurora to an ocean, with waves splashing halfway up and an underwater view halfway down.
+    </ScriptType-freetext>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Genesis
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      Okay. I'll send in the first.
+    </ScriptType-message>
+  
