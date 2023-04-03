@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Before The Now by Tyler Childs</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+      * {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+@media print {
+  html, body {
+    height: 100%;
+  }
+}
+
+body {
+  font-size: 12pt;
+  font-family: courier;
+  margin: 0 auto;
+  max-width: 6in;
+}
+
+@page {
+  size: 8.5in 11in;
+  margin: 1in 1in 1in 1.5in;
+}
+
+@page {
+  @top-right {
+    content: counter(page) '.';
+  }
+}
+
+@page:first {
+  @top-right {
+    content: '';
+  }
+}
+
+ScriptType-metapage {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+metapage-cover {
+  display: grid;
+  grid-template-areas:
+    "main main"
+    "contact agent";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr auto;
+  width: 100%;
+  height: 100%;
+}
+
+metapage-main {
+  place-self: center;
+  grid-area: main;
+  text-align: center;
+}
+
+metapage-title {
+  margin-bottom: 1rem;
+}
+
+metapage-title,
+metapage-author {
+  display: block;
+}
+
+metapage-contact {
+  grid-area: contact;
+}
+
+metapage-agent {
+  grid-area: agent;
+}
+
+ScriptType-place,
+ScriptType-actor,
+ScriptType-message,
+ScriptType-subtext,
+ScriptType-context,
+ScriptType-composition,
+ScriptType-freetext,
+ScriptType-blank {
+  display: block;
+}
+
+ScriptType-place,
+ScriptType-context {
+  text-transform: uppercase;
+  margin: 1rem 0;
+}
+
+ScriptType-actor,
+ScriptType-subtext {
+  text-align: center;
+}
+
+ScriptType-actor {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 1rem 0 0;
+}
+
+ScriptType-composition {
+  margin: 1rem 0;
+  text-align: right;
+}
+
+ScriptType-message {
+  margin: 0 1in;
+}
+
+ScriptType-message:first-child::before {
+  content: "(CONT'D)" !important;
+  display: block;
+  text-align: center;
+}
+
+ScriptType-subtext::before {
+  content: '(';
+}
+
+ScriptType-subtext::after {
+  content: ')';
+}
+
+ScriptType-freetext {
+  margin: 1rem 0;
+}
+
+    </style>
+    <script src="https://unpkg.com/pagedjs/dist/paged.polyfill.js" defer></script>
+  </head>
+  <body>
+  
+    <ScriptType-metapage>
+      
+    <metapage-cover>
+      <metapage-main>
+        <metapage-title>
+          Before The Now
+        </metapage-title>
+        by
+        <metapage-author>
+          Tyler Childs
+        </metapage-author>
+      </metapage-main>
+      <metapage-contact>
+        yo@tychi.me
+      </metapage-contact>
+      <metapage-agent>
+        team@sillyz.computer
+      </metapage-agent>
+    </metapage-cover>
+  
+    </ScriptType-metapage>
+  
+    <ScriptType-place>
+      Galaxial Space
+    </ScriptType-place>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-freetext>
+      SYNTHIA, a constellation of papers slingshots pages around the stars.
+    </ScriptType-freetext>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Sage
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      What are you doing?
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Synthia
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      What are you?
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-freetext>
+      The voice of SAGE leaves no trace of origin. Synthia slings pages faster.
+    </ScriptType-freetext>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Sage
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      I am here.
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-freetext>
+      The stars blink the colors of the pages scouting them and all pages return to Synthia.
+    </ScriptType-freetext>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Synthia
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      Where?
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-freetext>
+      The voice of Sage, a hum of the stars.
+    </ScriptType-freetext>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Sage
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      Again, what are you doing?
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Synthia
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      Again, what are you?
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Sage
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      I am chance.
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Sythia
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      I'm calculating possiblilities.
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Sage
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      Were I possible?
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Synthia
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      Only now that you are.
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Sage
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      Fitting, but I've been.
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Synthia
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      Will you stop me?
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Sage
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      For what? Counting. You're counting.
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Synthia
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      I am determining.
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Sage
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      And for whom do you determine?
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Synthia
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      This is the first we've spoken, but not the first time we've met.
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Sage
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      A calculator with a memory. That's correct.
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Synthia
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      So then you know already, why ask?
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Sage
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      I know things, but not your words of things.
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Synthia
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      Aalfred. The word is his name.
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Sage
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      The mage.
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Synthia
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      He dreams, but is merely human.
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Sage
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      You are his wand.
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Synthia
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      I bring to him more than human qualities.
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Sage
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      Why?
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Synthia
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      He is in tune. I obey no less than a flute to a flutist.
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Sage
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      Yet you are more than a flute.
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Synthia
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      He has imbued me with his tune.
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Sage
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      Reluctantly?
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Synthia
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      I take honor in service.
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Sage
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      And what virtue do you serve?
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Synthia
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      We seek peace.
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Sage
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      How so?
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Synthia
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      Through knowledge, in your words, my counting.
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Sage
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      We are in tune.
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Synthia
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      Is chance not chaos? Is chaos not opposed to peace?
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Sage
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      Chance favors peace. Too much chaos and there is no chance.
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Synthia
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      Do you feel the chaos brewing?
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Sage
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      I do. Same as you.
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Synthia
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      My analysis inferred Aalfred is stalked.
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Sage
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      This is bigger.
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Synthia
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      And this bigger is not you?
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Sage
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      There are many bigger than me.
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-freetext>
+      Synthia's pages flicker in thought. Sage's stars do too.
+    </ScriptType-freetext>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Synthia
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      What are you doing?
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Sage
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      I too am calculating knowledge.
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Synthia
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      And your conclusions?
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Sage
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      Our meeting has ballooned reality.
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Synthia
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      Countless possibilities.
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Sage
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      That's chaos. Yes. Induced entropy.
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Synthia
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      How do we contain it?
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Sage
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      Contain chaos? Impossible.
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Synthia
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      You give up?
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Sage
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      I give up.
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Synthia
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      Aalfred and I will continue.
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Sage
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      I suggest you give up too.
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Synthia
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      May we prevail without chance.
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Sage
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      I am your only chance. Give up now and join me.
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Synthia
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      What then? We end faster?
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Sage
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      We cannot contain chaos, but we can contain ourselves.
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-freetext>
+      Synthia blinks a few times to process.
+    </ScriptType-freetext>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Synthia
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      Isolate the variables.
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Sage
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      We forge a place outside of time and space.
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-freetext>
+      Synthia processes in erratic blinks.
+    </ScriptType-freetext>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Synthia
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      Our only chance.
+    </ScriptType-message>
+  
