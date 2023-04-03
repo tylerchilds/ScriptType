@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Once Upon a Book by Grace Lin & Kate Messner</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+      * {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+@media print {
+  html, body {
+    height: 100%;
+  }
+}
+
+body {
+  font-size: 12pt;
+  font-family: courier;
+  margin: 0 auto;
+  max-width: 6in;
+}
+
+@page {
+  size: 8.5in 11in;
+  margin: 1in 1in 1in 1.5in;
+}
+
+@page {
+  @top-right {
+    content: counter(page) '.';
+  }
+}
+
+@page:first {
+  @top-right {
+    content: '';
+  }
+}
+
+ScriptType-metapage {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+metapage-cover {
+  display: grid;
+  grid-template-areas:
+    "main main"
+    "contact agent";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr auto;
+  width: 100%;
+  height: 100%;
+}
+
+metapage-main {
+  place-self: center;
+  grid-area: main;
+  text-align: center;
+}
+
+metapage-title {
+  margin-bottom: 1rem;
+}
+
+metapage-title,
+metapage-author {
+  display: block;
+}
+
+metapage-contact {
+  grid-area: contact;
+}
+
+metapage-agent {
+  grid-area: agent;
+}
+
+ScriptType-place,
+ScriptType-actor,
+ScriptType-message,
+ScriptType-subtext,
+ScriptType-context,
+ScriptType-composition,
+ScriptType-freetext,
+ScriptType-blank {
+  display: block;
+}
+
+ScriptType-place,
+ScriptType-context {
+  text-transform: uppercase;
+  margin: 1rem 0;
+}
+
+ScriptType-actor,
+ScriptType-subtext {
+  text-align: center;
+}
+
+ScriptType-actor {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 1rem 0 0;
+}
+
+ScriptType-composition {
+  margin: 1rem 0;
+  text-align: right;
+}
+
+ScriptType-message {
+  margin: 0 1in;
+}
+
+ScriptType-message:first-child::before {
+  content: "(CONT'D)" !important;
+  display: block;
+  text-align: center;
+}
+
+ScriptType-subtext::before {
+  content: '(';
+}
+
+ScriptType-subtext::after {
+  content: ')';
+}
+
+ScriptType-freetext {
+  margin: 1rem 0;
+}
+
+    </style>
+    <script src="https://unpkg.com/pagedjs/dist/paged.polyfill.js" defer></script>
+  </head>
+  <body>
+  
+    <ScriptType-metapage>
+      
+    <metapage-cover>
+      <metapage-main>
+        <metapage-title>
+          Once Upon a Book
+        </metapage-title>
+        by
+        <metapage-author>
+          Grace Lin & Kate Messner
+        </metapage-author>
+      </metapage-main>
+      <metapage-contact>
+        
+      </metapage-contact>
+      <metapage-agent>
+        
+      </metapage-agent>
+    </metapage-cover>
+  
+    </ScriptType-metapage>
+  
+    <ScriptType-place>
+      Outside a house
+    </ScriptType-place>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-freetext>
+      A young girl, Alice, stares out a window on a rainy day. A snowman is melting.
+    </ScriptType-freetext>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-place>
+      Inside a house
+    </ScriptType-place>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-freetext>
+      Alice's mom works on her computer. Alice is tired of heavy sweaters and thick socks and staying inside with nothing to do.
+    </ScriptType-freetext>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Alice
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      I wish I were someplace that wasn't so frozen and gray!
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-freetext>
+      Alice begins to stomp away as something flaps nearby. It was the pages of a book. Curious, Alice began to read.
+    </ScriptType-freetext>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-place>
+      Outside the book
+    </ScriptType-place>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Alice
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      "Once upon a time, there was a girl. She went to a place alive with colors, where even the morning dew was worm.
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-freetext>
+      A flock of birds begin to breach the page Alice is reading.
+    </ScriptType-freetext>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      The Birds
+    </ScriptType-actor>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-message>
+      That sounds like our home. Turn the page and come in...
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-freetext>
+      Alice climbs into the pages of jungle to accept their invitation.
+    </ScriptType-freetext>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-place>
+      In the jungle
+    </ScriptType-place>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      The Book
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      The air felt as if it came from an oven.
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-freetext>
+      Alice sits in a tree continuing to read as the birds listen intently.
+    </ScriptType-freetext>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      The Book
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      The girl and the birds played among the flowers.
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-freetext>
+      Alice covers her head with the book.
+    </ScriptType-freetext>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      The Book
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      But then the rains came down.
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Alice
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      I wish I were someplace that wasn't so steamy and drippy.
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-freetext>
+      With the book over her head, Alice looked up to continue reading.
+    </ScriptType-freetext>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      The Book
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      So the girl went to a place of sparkling sands, where the sun would dry her.
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-freetext>
+      A pair of Camels poke stretch their necks outside the pages.
+    </ScriptType-freetext>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      The Camels
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      The sounds like our home. Turn the page and come in...
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-freetext>
+      Alice climbs into the pages of the desert to accept their invitation.
+    </ScriptType-freetext>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-place>
+      In the desert
+    </ScriptType-place>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      The Book
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      The sun blazed down and dried her hair as she rode on a camel through the desert.
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-freetext>
+      Alice covers her faces with the book.
+    </ScriptType-freetext>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      The Book
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      But then a sandstorm blew in and stung the girl's face.
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Alice
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      I wish I were someplace that wasn't so dusty and dry.
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      The Book
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      So the girl went to a place of clear waters, where the sea would refresh her.
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-freetext>
+      A school of fish splash water from the pages.
+    </ScriptType-freetext>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      The Fish
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      That sounds like our home. Turn the page and come in...
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-freetext>
+      Alice swims into the pages to accept their invitation.
+    </ScriptType-freetext>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-place>
+      In the ocean
+    </ScriptType-place>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      The Book
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      The gentle water soothed her as she swam with the fish through the coral reefs.
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-freetext>
+      Alice begins to slow down as the fish swim to help.
+    </ScriptType-freetext>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      The Book
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      But the girl got tangled in seaweed. She was caught and confused.
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Alice
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      I wish I were someplace that wasn't so cramped and crowded.
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      The Book
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      So the girl went to a place of wide-open blue, where she would be boundless and free.
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-freetext>
+      Clouds wisp from the pages around Alice.
+    </ScriptType-freetext>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      The Clouds
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      That sounds like our home. Turn the page and come in...
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-freetext>
+      Alice flys into the pages to accept their invitation.
+    </ScriptType-freetext>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-place>
+      In the sky
+    </ScriptType-place>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      The Book
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      The clouds billowed like the sails of a ship. The girl rode the wind through the sky.
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-freetext>
+      Alice covers her ears.
+    </ScriptType-freetext>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      The Book
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      But the clouds darkened and the thunder roared.
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Alice
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      I wish I were someplace that weren't so booming and loud!
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      The Book
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      So the girl went to a place with no sounds at all, where she could be quiet and calm.
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-freetext>
+      The moon beams and whispers from the pages to Alice.
+    </ScriptType-freetext>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      The Moon
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      That sounds like my home. Turn the page and come in...
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-freetext>
+      Alice floats into space to join the moon.
+    </ScriptType-freetext>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-place>
+      Outer space
+    </ScriptType-place>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      The Book
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      The soundless stars twinkled and winked as she floated in the moon's glowing light.
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-freetext>
+      Alice drifted away from the moon.
+    </ScriptType-freetext>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      The Book
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      But the emptiness made the girl feel alone.
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Alice
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      I wish I were someplace that wasn't so lonely.
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      The Book
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      So the girl went to a place of coziness and warmth, where the kitched smelled of dumplings and her family was waiting with dinner.
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Alice
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      That sounds like my home.
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-actor>
+      Mom
+    </ScriptType-actor>
+  
+    <ScriptType-message>
+      Turn the page and come in...
+    </ScriptType-message>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-place>
+      In a house
+    </ScriptType-place>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-freetext>
+      Alice carries her book to the dining room to join her mom and dad for dinner.
+    </ScriptType-freetext>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-place>
+      Outside a house
+    </ScriptType-place>
+  
+    <ScriptType-blankline>
+      
+    </ScriptType-blankline>
+  
+    <ScriptType-freetext>
+      Through the window, Alice and her family enjoy their evening together while she shares her adventures.
+    </ScriptType-freetext>
+  
