@@ -34,7 +34,7 @@ body {
   }
 }
 
-ScriptType-metapage {
+typewriter-metapage {
   display: block;
   height: 100%;
   width: 100%;
@@ -74,57 +74,58 @@ metapage-agent {
   grid-area: agent;
 }
 
-ScriptType-place,
-ScriptType-actor,
-ScriptType-message,
-ScriptType-subtext,
-ScriptType-context,
-ScriptType-composition,
-ScriptType-freetext,
-ScriptType-blank {
+typewriter-place,
+typewriter-actor,
+typewriter-message,
+typewriter-subtext,
+typewriter-context,
+typewriter-composition,
+typewriter-freetext,
+typewriter-blank {
   display: block;
 }
 
-ScriptType-place,
-ScriptType-context {
+typewriter-place,
+typewriter-context {
   text-transform: uppercase;
   margin: 1rem 0;
 }
 
-ScriptType-actor,
-ScriptType-subtext {
+typewriter-actor,
+typewriter-subtext {
   text-align: center;
 }
 
-ScriptType-actor {
+typewriter-actor {
   text-align: center;
   text-transform: uppercase;
   margin: 1rem 0 0;
 }
 
-ScriptType-composition {
+typewriter-composition {
   margin: 1rem 0;
   text-align: right;
 }
 
-ScriptType-message {
+typewriter-message {
   margin: 0 1in;
 }
-
-ScriptType-message:first-child::before {
+/*
+typewriter-message:first-child::before {
   content: "(CONT'D)" !important;
   display: block;
   text-align: center;
 }
+*/
 
-ScriptType-subtext::before {
+typewriter-subtext::before {
   content: '(';
 }
 
-ScriptType-subtext::after {
+typewriter-subtext::after {
   content: ')';
 }
 
-ScriptType-freetext {
+typewriter-freetext {
   margin: 1rem 0;
 }

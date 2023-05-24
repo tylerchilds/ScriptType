@@ -5,7 +5,7 @@ let scope = 'global'
 let dynamic = ''
 
 const ScriptType = {
-  '{': metaCode,
+  '{': object,
   '#': place,
   '@': actor,
   '"': message,
@@ -23,17 +23,19 @@ const format = path.join(Deno.cwd(), 'src/format.css')
 
 await Deno.create(result);
 
-const NORMAL_MODE = 'normal'
-const META_MODE = 'meta'
-const DYNAMIC_MODE = 'dynamic'
+const BIOS_MODE = Symbol('bios')
+const NORMAL_MODE = Symbol('normal')
+const KEY_VALUE_MODE = Symbol('key-value')
+const DYNAMIC_MODE = Symbol('dynamic')
 
 const modes = {
+  [BIOS_MODE]: biosMode,
   [NORMAL_MODE]: normalMode,
-  [META_MODE]: metaMode,
+  [KEY_VALUE_MODE]: kvMode,
   [DYNAMIC_MODE]: dynamicMode,
 }
 
-let mode = NORMAL_MODE
+let mode = BIOS_MODE
 
 const bus = {
   state: {}
@@ -46,6 +48,12 @@ const fileReader = await Deno.open(filename);
 
 for await (const line of readLines(fileReader)) {
   await (modes[mode] || noop)(line)
+}
+
+function biosMode(line) {
+  console.log('todo: implement')
+  console.log(line)
+  mode = NORMAL_MODE
 }
 
 async function normalMode(line) {
@@ -61,7 +69,7 @@ async function normalMode(line) {
   return await freetext(line)
 }
 
-async function metaMode(line) {
+async function kvMode(line) {
   const [key, value] = line.split(':')
 
   if(!value) {
@@ -98,10 +106,10 @@ function setDynamic(d) {
 }
 
 
-function metaCode(scope) {
+function object(scope) {
   setScope(scope)
   resetAttributes(scope)
-  setMode(META_MODE)
+  setMode(KEY_VALUE_MODE)
 }
 
 function dynamicCode(x) {
